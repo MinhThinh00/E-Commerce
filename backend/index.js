@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://ecommerce-sigma-client-three.vercel.app',
     credentials: true // Cho phép gửi cookie
 }));
 app.use("/api/auth",authRoute)

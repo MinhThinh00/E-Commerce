@@ -31,7 +31,7 @@ const ProductDetails = () => {
   const fetchProductDetails = useCallback(async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http://localhost:3000/api/product/${params.id}`, {
+      const response = await fetch(`https://ecommerce-sigmaa-three.vercel.app/api/product/${params.id}`, {
         method: 'GET',
         headers: {
           'content-type': 'application/json',
@@ -87,7 +87,7 @@ const ProductDetails = () => {
         return;
       }
 
-      const res = await axios.post('http://localhost:3000/api/card/add',{productId: id}, {
+      const res = await axios.post('https://ecommerce-sigmaa-three.vercel.app/api/card/add',{productId: id}, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

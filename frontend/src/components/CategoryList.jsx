@@ -9,7 +9,7 @@ const CategoryList = () => {
 
     const fetchCategoryProduct = async() =>{
         setLoading(true)
-        const response = await fetch("http://localhost:3000/api/product/getCategoryProduct")
+        const response = await fetch("https://ecommerce-sigmaa-three.vercel.app/api/product/getCategoryProduct")
         const dataResponse = await response.json()
         setLoading(false)
         setCategoryProduct(dataResponse.data)

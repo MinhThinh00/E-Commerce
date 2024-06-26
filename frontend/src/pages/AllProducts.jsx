@@ -6,7 +6,7 @@ const AllProducts = () => {
   const [openUploadProduct,setOpenUploadProduct] = useState(false)
   const [allProduct, setALlProduct] = useState([])
   const fetchdata= async () =>{
-    const res= await axios.get("http://localhost:3000/api/product/getProduct");
+    const res= await axios.get("https://ecommerce-sigmaa-three.vercel.app/api/product/getProduct");
     console.log(res.data.data,1);
     setALlProduct(res?.data.data || [])
   }

@@ -28,7 +28,7 @@ const getAllUser = () => {
           return;
         }
 
-        const res = await axios.get('http://localhost:3000/api/auth/getall', {
+        const res = await axios.get('https://ecommerce-sigmaa-three.vercel.app/api/auth/getall', {
           headers: {
             'Authorization': `Bearer ${token}`
           }
@@ -63,7 +63,7 @@ const getAllUser = () => {
     }
 
     try {
-      await axios.delete(`http://localhost:3000/api/auth/deleteUser/${userId}`, 
+      await axios.delete(`https://ecommerce-sigmaa-three.vercel.app/api/auth/deleteUser/${userId}`, 
       {
         headers: {
           'Authorization': `Bearer ${token}`
@@ -90,7 +90,7 @@ const getAllUser = () => {
     }
 
     try {
-      const res = await axios.post(`http://localhost:3000/api/auth/updateRole/${selectedUser._id}`, 
+      const res = await axios.post(`https://ecommerce-sigmaa-three.vercel.app/api/auth/updateRole/${selectedUser._id}`, 
       { role }, 
       {
         headers: {

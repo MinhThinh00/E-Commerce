@@ -38,7 +38,7 @@ const SignUp = () => {
     const handleSignUp = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:3000/api/auth/signup", data);
+            const res = await axios.post("https://ecommerce-sigmaa-three.vercel.app/api/auth/signup", data);
             const responseData = res.data; // Sử dụng res.data để lấy phản hồi từ axios
             console.log(responseData);
             if (!responseData.success) {

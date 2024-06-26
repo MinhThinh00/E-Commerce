@@ -9,7 +9,7 @@ const SearchProduct = () => {
     const url = new URLSearchParams(location.search)
     const query= url.get("query")
     console.log(url.get('query'))
-    const searchUrl= 'http://localhost:3000/api/product/getProductSearch?query='+ query;
+    const searchUrl= 'https://ecommerce-sigmaa-three.vercel.app/api/product/getProductSearch?query='+ query;
     console.log(searchUrl  )
 
     const fetchProduct = async () => {

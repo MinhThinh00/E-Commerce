@@ -26,7 +26,7 @@ const Header = () => {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/card/count", {
+      const res = await fetch("https://ecommerce-sigmaa-three.vercel.app/api/card/count", {
         headers: {
           Authorization: `Bearer ${token}`
         },
@@ -68,7 +68,7 @@ const Header = () => {
     }
   }
   const handleLogout = async () => {
-    const res = await fetch("http://localhost:3000/api/auth/logout")
+    const res = await fetch("https://ecommerce-sigmaa-three.vercel.app/api/auth/logout")
     const data = await res.json();
     console.log(data)
     if (data.success) {

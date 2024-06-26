@@ -78,7 +78,7 @@ const AdminEditProduct = ({
           return;
         }
 
-        const res = await axios.post(`http://localhost:3000/api/product/update/${data._id}`,data, {
+        const res = await axios.post(`https://ecommerce-sigmaa-three.vercel.app/api/product/update/${data._id}`,data, {
           headers: {
             'Authorization': `Bearer ${token}`
           }

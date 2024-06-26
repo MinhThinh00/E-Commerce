@@ -1,7 +1,7 @@
 
 const fetchCategoryWiseProduct = async(category)=>{
     console.log("category",category)
-    const response = await fetch(`http://localhost:3000/api/product/getProductByCategory?category=${category}`,{
+    const response = await fetch(`https://ecommerce-sigmaa-three.vercel.app/api/product/getProductByCategory?category=${category}`,{
         method : 'GET',
         headers : {
             "content-type" : "application/json"

@@ -17,7 +17,7 @@ const Cart = () => {
           console.error('Token is missing');
           return;
         }
-        const response = await axios.get('http://localhost:3000/api/card/getall',{
+        const response = await axios.get('https://ecommerce-sigmaa-three.vercel.app/api/card/getall',{
             headers: {
                 'Authorization': `Bearer ${token}`
               }
@@ -55,7 +55,7 @@ const Cart = () => {
         }
     
         try {
-            const response = await axios.post(`http://localhost:3000/api/card/update/${id}`, 
+            const response = await axios.post(`https://ecommerce-sigmaa-three.vercel.app/api/card/update/${id}`, 
                 {   
                     quantity: qty + 1
                 },
@@ -92,7 +92,7 @@ const Cart = () => {
             }
     
             try {
-                const response = await axios.post(`http://localhost:3000/api/card/update/${id}`, 
+                const response = await axios.post(`https://ecommerce-sigmaa-three.vercel.app/api/card/update/${id}`, 
                     {   
                         quantity: qty - 1
                     },
@@ -124,7 +124,7 @@ const Cart = () => {
           console.error('Token is missing');
           return;
         }
-        const response = await axios.delete(`http://localhost:3000/api/card/delete/${id}`,{
+        const response = await axios.delete(`https://ecommerce-sigmaa-three.vercel.app/api/card/delete/${id}`,{
             headers: {
                 'Authorization': `Bearer ${token}`
               }
